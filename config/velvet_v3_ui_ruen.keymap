@@ -89,7 +89,7 @@
         to_ruEn: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LCTRL)>;
+            bindings = <&kp LC(SPACE)>;
             label = "TO_RU";
         };
 
@@ -190,10 +190,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W     &kp E  &kp R      &kp T                                         &kp Y            &kp U  &kp I  &kp O  &kp P  &kp BSPC
-&kp TAB    &kp A  &kp S     &kp D  &kp F      &kp G                                         &kp H            &kp J  &kp K  &kp L  &none  &mo 9
-&kp LSHFT  &kp Z  &kp X     &kp C  &kp V      &kp B                                         &kp N            &kp M  &none  &none  &none  &kp RSHFT
-                  &kp LGUI  &kp L  &kp LCTRL  &mt LEFT_ALT SPACE  &lt 3 COMMA    &lt 2 DOT  &mt RCTRL ENTER  &mo 6  &none  &none
+&kp ESC    &kp Q  &kp W  &kp E  &kp R      &kp T                                             &kp Y            &kp U  &kp I  &kp O  &kp P  &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D  &kp F      &kp G                                             &kp H            &kp J  &kp K  &kp L  &none  &none
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V      &kp B                                             &kp N            &kp M  &none  &none  &none  &kp RSHFT
+                  &mo 9  &none  &kp LCTRL  &mt LEFT_COMMAND SPACE  &lt 3 COMMA    &lt 2 DOT  &mt RCTRL ENTER  &mo 6  &none  &none
             >;
 
             display-name = "Base";
@@ -202,10 +202,10 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &mo 9
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp RSHFT
-                                    &kp LEFT_GUI          &kp RU_CYRILLIC_DE  &kp LCTRL           &mt LEFT_ALT SPACE  &lt 4 RU_COMMA    &lt 2 RU_DOT  &mt RCTRL ENTER     &mo 6                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
+&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                      &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
+&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                      &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &mo 9
+&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                       &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp RSHFT
+                                    &mo 9                 &none               &kp LCTRL           &mt LEFT_COMMAND SPACE  &lt 4 KP_COMMA    &lt 2 KP_DOT  &mt RCTRL ENTER     &mo 6                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
@@ -235,7 +235,7 @@
             display-name = "Symbols";
             bindings = <
 &none           &none  &kp F1   &kp F2   &kp F3  &none                    &kp NUBS       &kp RU_COLON          &kp RU_SEMICOLON  &none          &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS
-&none           &none  &kp F4   &kp F5   &kp F6  &none                    &kp RU_SLASH   &kp RU_EXCLAMATION    &kp RU_QUESTION   &none          &none                    &none
+&none           &none  &kp F4   &kp F5   &kp F6  &none                    &kp RU_SLASH   &kp RU_EXCLAMATION    &kp QUESTION      &none          &none                    &none
 &kp LEFT_SHIFT  &none  &kp F7   &kp F8   &kp F9  &kp F10                  &kp RU_NUMERO  &kp RU_DOUBLE_QUOTES  &none             &none          &none                    &kp RIGHT_SHIFT
                        &kp F11  &kp F12  &none   &trans   &none    &mo 5  &none          &none                 &none             &kp AMPERSAND
             >;
