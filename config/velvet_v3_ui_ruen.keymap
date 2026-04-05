@@ -29,11 +29,6 @@
             key-positions = <19 6>;
         };
 
-        CAD {
-            bindings = <&ctrAltDel>;
-            key-positions = <19 30>;
-        };
-
         to_ruEn {
             bindings = <&to_ruEn>;
             key-positions = <16 15>;
@@ -82,6 +77,26 @@
         nazadVkladki {
             bindings = <&NazadVkladki>;
             key-positions = <39 19>;
+        };
+
+        screenshotOfTheScreen {
+            bindings = <&screenshotOfTheScreen>;
+            key-positions = <16 5>;
+        };
+
+        screenshotOfTheArea {
+            bindings = <&screenshotOfTheArea>;
+            key-positions = <16 17>;
+        };
+
+        screenshotOfTheWindow {
+            bindings = <&screenshotOfTheWindow>;
+            key-positions = <16 29>;
+        };
+
+        screenshotTools {
+            bindings = <&screenshotTools>;
+            key-positions = <30 19>;
         };
     };
 
@@ -183,6 +198,34 @@
             bindings = <&kp LA(RIGHT_ARROW)>;
             label = "VPEREDSTRANICA";
         };
+
+        screenshotOfTheScreen: screenshotOfTheScreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LCMD) &kp NUMBER_3>;
+            label = "SCREENSHOTOFTHESCREEN";
+        };
+
+        screenshotOfTheArea: area {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LCMD) &kp NUMBER_4>;
+            label = "AREA";
+        };
+
+        screenshotOfTheWindow: screenshotOfTheWindow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LCMD) &kp NUMBER_4 &kp SPACE>;
+            label = "SCREENSHOTOFTHEWINDOW";
+        };
+
+        screenshotTools: screenshotTools {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LCMD) &kp NUMBER_5>;
+            label = "SCREENSHOTTOOLS";
+        };
     };
 
     keymap {
@@ -190,10 +233,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R      &kp T                                             &kp Y            &kp U  &kp I  &kp O  &kp P  &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D  &kp F      &kp G                                             &kp H            &kp J  &kp K  &kp L  &none  &none
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V      &kp B                                             &kp N            &kp M  &none  &none  &none  &kp RSHFT
-                  &mo 9  &none  &kp LCTRL  &mt LEFT_COMMAND SPACE  &lt 3 COMMA    &lt 2 DOT  &mt RCTRL ENTER  &mo 6  &none  &none
+&kp ESC    &kp Q  &kp W  &kp E         &kp R      &kp T                                             &kp Y            &kp U  &kp I  &kp O  &kp P  &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D         &kp F      &kp G                                             &kp H            &kp J  &kp K  &kp L  &none  &none
+&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B                                             &kp N            &kp M  &none  &none  &none  &kp RSHFT
+                  &mo 9  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_COMMAND SPACE  &lt 3 COMMA    &lt 2 DOT  &mt RCTRL ENTER  &mo 6  &none  &none
             >;
 
             display-name = "Base";
@@ -205,7 +248,7 @@
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                          &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &mo 9
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp RSHFT
-                                    &mo 9                 &none               &kp LCTRL           &mt LEFT_COMMAND SPACE  &lt 4 LS(RU_N6)    &lt 2 LS(RU_N7)  &mt RCTRL ENTER     &mo 6                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
+                                    &mo 9                 &kp LEFT_ALT        &kp LCTRL           &mt LEFT_COMMAND SPACE  &lt 4 LS(RU_N6)    &lt 2 LS(RU_N7)  &mt RCTRL ENTER     &mo 6                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
