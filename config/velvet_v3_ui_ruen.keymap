@@ -202,28 +202,28 @@
         screenshotOfTheScreen: screenshotOfTheScreen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LCMD) &kp NUMBER_3>;
+            bindings = <&kp LS(LG(NUMBER_3))>;
             label = "SCREENSHOTOFTHESCREEN";
         };
 
         screenshotOfTheArea: area {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LCMD) &kp NUMBER_4>;
+            bindings = <&kp LS(LG(NUMBER_4))>;
             label = "AREA";
         };
 
         screenshotOfTheWindow: screenshotOfTheWindow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LCMD) &kp NUMBER_4 &kp SPACE>;
+            bindings = <&kp LS(LG(NUMBER_4)) &kp SPACE>;
             label = "SCREENSHOTOFTHEWINDOW";
         };
 
         screenshotTools: screenshotTools {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LCMD) &kp NUMBER_5>;
+            bindings = <&kp LS(LG(NUMBER_5))>;
             label = "SCREENSHOTTOOLS";
         };
     };
