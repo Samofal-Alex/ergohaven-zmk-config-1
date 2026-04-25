@@ -132,7 +132,7 @@
         pw: pw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp N &kp A &kp N &kp A &kp S &kp N3 &kp N7 &kp N4 &kp N7 &kp N4 &kp N8 &kp EXCL>;
+            bindings = <&kp LS(B) &kp A &kp N &kp A &kp N &kp A &kp S &kp N4 &kp N6 &kp N1 &kp N3 &kp NUMBER_3 &kp N7 &kp N4 &kp POUND &kp EXCL>;
             label = "PW";
         };
 
@@ -245,19 +245,19 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                          &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &mo 9
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp RSHFT
-                                    &mo 9                 &kp LEFT_ALT        &kp LCTRL           &mt LEFT_COMMAND SPACE  &lt 4 LS(RU_N6)    &lt 2 LS(RU_N7)  &mt RCTRL ENTER     &mo 6                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
+&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                      &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
+&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                      &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &mo 9
+&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                       &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp RSHFT
+                                    &mo 9                 &kp LEFT_ALT        &kp LCTRL           &mt LEFT_ALT SPACE  &lt 4 LS(RU_N6)    &lt 2 LS(RU_N7)  &mt LEFT_GUI ENTER  &mo 6                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
         nav {
             bindings = <
-&trans          &none   &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PLUS                   &kp ASTRK  &kp UP    &kp HOME         &kp PG_UP        &none  &kp BACKSPACE
-&kp CAPS        &kp N0  &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp MINUS                  &kp FSLH   &kp LEFT  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &none  &trans
-&kp LEFT_SHIFT  &trans  &kp N7        &kp N8        &kp N9        &kp EQUAL                  &kp PRCNT  &kp DOWN  &kp END          &kp PG_DN        &none  &kp RIGHT_SHIFT
-                        &none         &none         &trans        &kp SPACE  &mo 5    &none  &kp ENTER  &trans    &trans           &trans
+&trans          &none   &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PLUS                   &mt ASTRK RU_ASTRK  &kp UP    &kp HOME         &kp PG_UP        &none  &kp BACKSPACE
+&kp CAPS        &kp N0  &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp MINUS                  &kp FSLH            &kp LEFT  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &none  &trans
+&kp LEFT_SHIFT  &trans  &kp N7        &kp N8        &kp N9        &kp EQUAL                  &kp PRCNT           &kp DOWN  &kp END          &kp PG_DN        &none  &kp RIGHT_SHIFT
+                        &none         &none         &trans        &kp SPACE  &mo 5    &none  &kp ENTER           &trans    &trans           &trans
             >;
 
             display-name = "Navigation";
@@ -268,7 +268,7 @@
 &none           &none  &kp F1   &kp F2   &kp F3  &none                    &kp NUBS  &kp COLON  &kp SEMI       &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RPAR
 &none           &none  &kp F4   &kp F5   &kp F6  &none                    &kp FSLH  &kp EXCL   &kp QMARK      &kp AT_SIGN       &kp LEFT_BRACKET      &kp RIGHT_BRACKET
 &kp LEFT_SHIFT  &none  &kp F7   &kp F8   &kp F9  &kp F10                  &kp HASH  &kp DQT    &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE
-                       &kp F11  &kp F12  &none   &trans   &none    &mo 5  &none     &none      &kp DOLLAR     &kp AMPERSAND
+                       &kp F11  &kp F12  &none   &none    &none    &mo 5  &none     &none      &kp DOLLAR     &kp AMPERSAND
             >;
 
             display-name = "Symbols";
