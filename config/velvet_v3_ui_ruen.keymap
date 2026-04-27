@@ -234,7 +234,7 @@
         en {
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E         &kp R      &kp T                                             &kp Y            &kp U  &kp I  &kp O  &kp P  &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D         &kp F      &kp G                                             &kp H            &kp J  &kp K  &kp L  &none  &none
+&kp TAB    &kp A  &kp S  &kp D         &kp F      &kp G                                             &kp H            &kp J  &kp K  &kp L  &none  &trans
 &kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B                                             &kp N            &kp M  &none  &none  &none  &kp RSHFT
                   &mo 9  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_COMMAND SPACE  &lt 3 COMMA    &lt 2 DOT  &mt RCTRL ENTER  &mo 6  &none  &none
             >;
