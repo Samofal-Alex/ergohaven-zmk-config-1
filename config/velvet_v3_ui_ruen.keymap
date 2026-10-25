@@ -96,6 +96,11 @@
 
         screenshotTools {
             bindings = <&screenshotTools>;
+            key-positions = <17 29>;
+        };
+
+        p_w2 {
+            bindings = <&p_w2>;
             key-positions = <30 19>;
         };
     };
@@ -132,7 +137,7 @@
         pw: pw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp N &kp A &kp N &kp A &kp S &kp N4 &kp N6 &kp N1 &kp N3 &kp N3 &kp N7 &kp N4 &kp POUND &kp EXCL &kp POUND>;
+            bindings = <&kp LS(A) &kp N &kp A &kp N &kp A &kp S &kp N3 &kp N7 &kp N4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_8 &kp EXCL>;
             label = "PW";
         };
 
@@ -225,6 +230,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LG(NUMBER_5))>;
             label = "SCREENSHOTTOOLS";
+        };
+
+        p_w2: p_w2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp E &kp B &kp M &kp A &kp S &kp T &kp E &kp R &kp POUND &kp N0 &kp N8 &kp N3 &kp N7 &kp N8 &kp N0>;
+            label = "P_W2";
         };
     };
 
